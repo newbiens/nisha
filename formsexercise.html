@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+</head>
+<body>
+<h2>Register</h2>
+<form>
+	<label for="First name">First name:</label>
+	<input type="text" name="name" placeholder="username" required="firstname" >
+	<label for="Last name">Last name:</label>
+	<input type="text" name="lastname" placeholder="lastname" required>
+	<div><label for="Male">Male:</label>
+	<input type="radio" name="choice" value="male">
+	<label for="female">female:</label>
+	<input type="radio" name="choice" value="female">
+	<label for="other">other:</label>
+	<input type="radio" name="choice" value="other"></div>
+	<div>
+		<label for="Email">Email:</label>
+		<input type="email" name="email" required="email">
+		<label for="Password">Password:</label>
+		<input type="Password" name="Password" pattern=".{5,10}" required title="5to 10 characters" required="Password" >
+	</div>
+	<div>
+		<label >
+			Birthday:
+			<select name="month">
+				<option>Month</option>
+				<option>jan</option>
+				<option>feb</option>
+				<option>march</option>
+				<option>april</option>
+			</select>
+			<select name="day">
+				<option>Day</option>
+				<option>1</option>
+				<option>2</option>
+				<option>4</option>
+			</select>
+			<select name="year">
+				<option>Year</option>
+				<option>2000</option>
+				<option>2003</option>
+				<option>2001</option>
+			</select>
+			
+			
+		</label>
+	</div>
+	<p>I agree to the terms and conditions <input type="radio" name="choice"></p>
+	
+	
+	
+
+	<button>submit</button>
+</form>
+</body>
+</html>
